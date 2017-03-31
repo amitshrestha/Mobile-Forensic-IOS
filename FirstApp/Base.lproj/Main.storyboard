@@ -1,25 +1,176 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="LcW-S3-Fl2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FirstApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iv6-QU-QQU">
+                                <rect key="frame" x="4" y="91" width="196" height="136"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZl-tm-3BR">
+                                <rect key="frame" x="4" y="269" width="67" height="30"/>
+                                <color key="backgroundColor" red="0.33841000542266308" green="1" blue="0.06652112062004123" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Import"/>
+                                <connections>
+                                    <action selector="importButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hCT-TI-QJn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ww-9G-g1B">
+                                <rect key="frame" x="202" y="91" width="45" height="30"/>
+                                <state key="normal" title="Rotate"/>
+                                <connections>
+                                    <action selector="rotateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sj2-0C-xsz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCF-DZ-epm">
+                                <rect key="frame" x="4" y="317" width="55" height="30"/>
+                                <color key="backgroundColor" red="0.33841000539999999" green="1" blue="0.066521120619999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Capture"/>
+                                <connections>
+                                    <action selector="myCaptureBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pqc-MC-BHg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uxr-6s-lZC">
+                                <rect key="frame" x="94" y="269" width="65" height="30"/>
+                                <color key="backgroundColor" red="0.33841000539999999" green="1" blue="0.066521120619999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Export"/>
+                                <connections>
+                                    <action selector="exportImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xtF-MX-nvx"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Vh-uZ-Ywj">
+                                <rect key="frame" x="4" y="355" width="220" height="152"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VHe-bQ-Teu">
+                                <rect key="frame" x="72" y="318" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="rotateButton:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="zYZ-zA-E7M"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fuE-ox-I1p">
+                                <rect key="frame" x="4" y="518" width="86" height="30"/>
+                                <state key="normal" title="Go Embed"/>
+                                <connections>
+                                    <action selector="embedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j3P-Pf-Y0n"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="chM-kH-onm"/>
+                    <connections>
+                        <outlet property="myImageView" destination="Iv6-QU-QQU" id="sQA-PT-hQt"/>
+                        <outlet property="new_image" destination="6Vh-uZ-Ywj" id="IzN-2Y-jMb"/>
+                        <outlet property="secretMessagefield" destination="VHe-bQ-Teu" id="WEY-20-7Ez"/>
+                        <segue destination="XmD-xs-mWJ" kind="push" identifier="embedviewconnect" id="Gl5-Dg-qN7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="563" y="284"/>
+        </scene>
+        <!--Embed View Controller-->
+        <scene sceneID="ja8-dl-bJG">
+            <objects>
+                <viewController storyboardIdentifier="EmbedViewController" id="XmD-xs-mWJ" customClass="EmbedViewController" customModule="FirstApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MN6-Ak-i5A"/>
+                        <viewControllerLayoutGuide type="bottom" id="jCP-r1-Ov6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rVx-5s-jCt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zjU-8i-c4H">
+                                <rect key="frame" x="25" y="72" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vGv-oG-ZUj">
+                                <rect key="frame" x="38" y="236" width="155" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Message to Embed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eS4-sc-px5">
+                                <rect key="frame" x="38" y="207" width="159" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="577-1W-1fM">
+                                <rect key="frame" x="46" y="274" width="138" height="30"/>
+                                <state key="normal" title="Embed Message"/>
+                                <connections>
+                                    <action selector="embedButton:" destination="XmD-xs-mWJ" eventType="touchUpInside" id="oJH-GL-8hg"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oj2-HW-f72">
+                                <rect key="frame" x="25" y="387" width="240" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Stego Image" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jSF-kY-F6i">
+                                <rect key="frame" x="25" y="348" width="153" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.99392361111111116" green="0.99392361111111116" blue="0.99392361111111116" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLm-e1-KOi">
+                                <rect key="frame" x="27" y="547" width="181" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0f-2A-9AP">
+                                <rect key="frame" x="51" y="518" width="128" height="30"/>
+                                <state key="normal" title="Retrive Message"/>
+                                <connections>
+                                    <action selector="retrieveButton:" destination="XmD-xs-mWJ" eventType="touchUpInside" id="gI7-zd-uEf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7hB-wk-izp"/>
+                    <connections>
+                        <outlet property="coverImage" destination="zjU-8i-c4H" id="Vpf-v2-f3f"/>
+                        <outlet property="retrievedMessageField" destination="kLm-e1-KOi" id="GZz-CQ-W3e"/>
+                        <outlet property="secretMessageField" destination="vGv-oG-ZUj" id="81E-46-9Mb"/>
+                        <outlet property="stegoImage" destination="oj2-HW-f72" id="oBB-7Z-H6F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FNy-BA-ko1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="985" y="284"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6xU-Md-Cwp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LcW-S3-Fl2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="axq-2L-nlT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="w5g-WP-7Se"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GPx-3p-iTQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.66666666666666" y="284.94666666666666"/>
         </scene>
     </scenes>
 </document>

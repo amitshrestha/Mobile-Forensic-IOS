@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2801BAC21E8DCEC800EE6633 /* EmbedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2801BAC11E8DCEC800EE6633 /* EmbedViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		2805FA791E71C71700D1854B /* RGBAImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2805FA781E71C71700D1854B /* RGBAImage.swift */; settings = {ASSET_TAGS = (); }; };
+		2807738A1E8AC109006E842D /* ImageProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280773891E8AC109006E842D /* ImageProcessing.swift */; settings = {ASSET_TAGS = (); }; };
+		2807738C1E8AC13B006E842D /* SwiftMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2807738B1E8AC13B006E842D /* SwiftMatrix.swift */; settings = {ASSET_TAGS = (); }; };
 		28CBA9771E24529200552991 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CBA9761E24529200552991 /* AppDelegate.swift */; };
 		28CBA9791E24529200552991 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CBA9781E24529200552991 /* ViewController.swift */; };
 		28CBA97C1E24529200552991 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28CBA97A1E24529200552991 /* Main.storyboard */; };
@@ -34,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2801BAC11E8DCEC800EE6633 /* EmbedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmbedViewController.swift; sourceTree = "<group>"; };
+		2805FA781E71C71700D1854B /* RGBAImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGBAImage.swift; sourceTree = "<group>"; };
+		280773891E8AC109006E842D /* ImageProcessing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageProcessing.swift; sourceTree = "<group>"; };
+		2807738B1E8AC13B006E842D /* SwiftMatrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftMatrix.swift; sourceTree = "<group>"; };
 		28CBA9731E24529200552991 /* FirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28CBA9761E24529200552991 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28CBA9781E24529200552991 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +111,10 @@
 				28CBA97D1E24529200552991 /* Assets.xcassets */,
 				28CBA97F1E24529200552991 /* LaunchScreen.storyboard */,
 				28CBA9821E24529200552991 /* Info.plist */,
+				2805FA781E71C71700D1854B /* RGBAImage.swift */,
+				280773891E8AC109006E842D /* ImageProcessing.swift */,
+				2807738B1E8AC13B006E842D /* SwiftMatrix.swift */,
+				2801BAC11E8DCEC800EE6633 /* EmbedViewController.swift */,
 			);
 			path = FirstApp;
 			sourceTree = "<group>";
@@ -255,7 +267,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2807738C1E8AC13B006E842D /* SwiftMatrix.swift in Sources */,
+				2807738A1E8AC109006E842D /* ImageProcessing.swift in Sources */,
+				2801BAC21E8DCEC800EE6633 /* EmbedViewController.swift in Sources */,
 				28CBA9791E24529200552991 /* ViewController.swift in Sources */,
+				2805FA791E71C71700D1854B /* RGBAImage.swift in Sources */,
 				28CBA9771E24529200552991 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,6 +414,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FirstApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = amit.FirstApp;
@@ -409,6 +426,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FirstApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = amit.FirstApp;
@@ -483,6 +501,7 @@
 				28CBA99D1E24529200552991 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		28CBA99E1E24529200552991 /* Build configuration list for PBXNativeTarget "FirstAppTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +510,7 @@
 				28CBA9A01E24529200552991 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		28CBA9A11E24529200552991 /* Build configuration list for PBXNativeTarget "FirstAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +519,7 @@
 				28CBA9A31E24529200552991 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
